@@ -4,9 +4,9 @@ using namespace std;
 int main()
 {
     int a,b;
-    cout<<"Enter the No. of stars in Side 1: ";
+    cout<<"Enter the No. of stars in height: ";
     cin>>a;
-    cout<<"Enter the No. of stars in Side 2: ";
+    cout<<"Enter the No. of stars in width: ";
     cin>>b;
     for(int i=1;i<=a;i++)
     {
