@@ -7,7 +7,6 @@ int main()
     printf("Enter the size of stack: ");
     scanf("%d",&n);
     int stack[n];
-    for(int i=0;i<=n;i++)
     {
         printf("Enter the Element");
         scanf("%d",&x);
