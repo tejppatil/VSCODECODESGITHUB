@@ -1,5 +1,3 @@
-//Write a c++ program to create class test having data members mark and spi.
-//create member function setdata and displaydata
 #include<iostream>
 using namespace std;
 class Test
@@ -10,8 +8,8 @@ class Test
     public:
         void SetData()
         {
-            mark=270;
-            spi=6.5;
+            cin>>mark;
+            cin>>spi;
         }
         void DisplayData()
         {
@@ -21,8 +19,10 @@ class Test
 };
 int main()
 {
-    Test o1;
+    Test o1,o2;
     o1.SetData();
     o1.DisplayData();
+    o2.SetData();
+    o2.DisplayData();
     return 0;
 }
