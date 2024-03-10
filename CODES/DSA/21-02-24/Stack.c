@@ -1,64 +1,89 @@
 //program to create a stack and enter elements untill it overflows
 #include <stdio.h>
-int top=-1;
-void push(int s[],int n)
+#include<conio.h>
+#define n 5
+int stack[n],top=-1;
+void push()
 {
-    if(top=n-1)
+    int x;
+    printf("Enter the element: \n");
+    scanf("%d",&x);
+    if(top==n-1)
     {
-        printf("Stack overflow>>");
+        printf("Stack overflow>>\n");
     }
     else
     {
-        printf("Enter the element: ");
-        scanf("%d",&s[n]);
-        top++;
+        top=top+1;
+        stack[top]=x;
     }
 }
-void pop(int s[],int n)
+void pop()
 {
-    if(top=-1)
+    if(top==-1)
     {
-        printf("Stack underflow>>>");
+        printf("Stack underflow>>>\n");
     }
     else
     {
-        printf("Popped element is %d",top);
-        top--;
+        printf("Popped element is %d\n",stack[top]);
+        top=top-1;
     }
-
+}
+void peep()
+{
+     if(top==-1)
+    {
+        printf("Stack underflow>>>\n");
+    }
+    else
+    {
+        printf("Element is %d\n",stack[top]);
+    }
+}
+void disp()
+{
+    if(top==-1)
+    {
+        printf("Stack underflow>>>\n");
+    }
+    else
+    {
+        printf("Element are: ");
+        for(int i=top;i>=0;i--)
+        {
+            printf("%d ",stack[i]);
+        }
+        printf("\n");
+    }
 }
 int main() 
 {
-    int n,x;
-    printf("Enter the size of stack: ");
-    scanf("%d",&n);
-    int stack[n];
+    int x;
     do
     {
-        printf("Enter the choice:\n1)For push Operation\n2)For pop Operation\n3)For peep Operation\n4)For display Operation\n0)For Exit ");
+        printf("Enter the choice:\n1)For push Operation\n2)For pop Operation\n3)For peep Operation\n4)For display Operation\n0)For Exit \n");
         scanf("%d",&x);
          switch(x)
     {
         case 0:
-            printf("Exited the program>>");
+            printf("Exited the program>>\n");
         case 1:
-            push(stack[n]);
+            push();
             break;
         case 2:
-            pop(stack[n]);
+            pop();
             break;
         case 3:
-            peep(stack[n]);
+            peep();
             break;
         case 4:
-            disp(stack[n]);
+            disp();
             break;
         default:
-            printf("Wrong choice entered \nProgram exited>>");
+            printf("Wrong choice entered \nProgram exited>>\n");
             break;
     }
-    } while (x!=0)
-    
-   
-    return 0;
+    } while (x!=0);
+    getch();
 }
