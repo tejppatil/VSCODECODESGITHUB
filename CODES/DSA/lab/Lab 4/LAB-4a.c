@@ -1,29 +1,89 @@
 //Write a C program to implement Stack operations using Array.
 #include <stdio.h>
-int TOP=-1;
+#include<conio.h>
+#define n 5
+int stack[n],top=-1;
+void push()
+{
+    int x;
+    printf("Enter the element: \n");
+    scanf("%d",&x);
+    if(top==n-1)
+    {
+        printf("Stack overflow>>\n");
+    }
+    else
+    {
+        top=top+1;
+        stack[top]=x;
+    }
+}
+void pop()
+{
+    if(top==-1)
+    {
+        printf("Stack underflow>>>\n");
+    }
+    else
+    {
+        printf("Popped element is %d\n",stack[top]);
+        top=top-1;
+    }
+}
+void peep()
+{
+     if(top==-1)
+    {
+        printf("Stack underflow>>>\n");
+    }
+    else
+    {
+        printf("Element is %d\n",stack[top]);
+    }
+}
+void disp()
+{
+    if(top==-1)
+    {
+        printf("Stack underflow>>>\n");
+    }
+    else
+    {
+        printf("Element are: ");
+        for(int i=top;i>=0;i--)
+        {
+            printf("%d ",stack[i]);
+        }
+        printf("\n");
+    }
+}
 int main() 
 {
-    int n,x;
-    printf("Enter the size of stack: ");
-    scanf("%d",&n);
-    int stack[n];
+    int x;
+    do
     {
-        printf("Enter the Element");
+        printf("Enter the choice:\n1)For push Operation\n2)For pop Operation\n3)For peep Operation\n4)For display Operation\n0)For Exit \n");
         scanf("%d",&x);
-        if(TOP==n-1)
-            {
-                printf("no space for-%d Stack is full,overflow condition",x);
-            }
-        else
-            {
-                TOP+=1;
-                stack[TOP]=x;
-            }
-    }
-    printf("\n");
-    for(int i=0;i<n;i++)
+         switch(x)
     {
-        printf("%d ",stack[i]);
+        case 0:
+            printf("Exited the program>>\n");
+        case 1:
+            push();
+            break;
+        case 2:
+            pop();
+            break;
+        case 3:
+            peep();
+            break;
+        case 4:
+            disp();
+            break;
+        default:
+            printf("Wrong choice entered \nProgram exited>>\n");
+            break;
     }
-    return 0;
+    } while (x!=0);
+    getch();
 }
