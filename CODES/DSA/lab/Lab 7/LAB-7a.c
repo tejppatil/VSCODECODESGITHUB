@@ -5,7 +5,8 @@ int front = -1;
 int rear = -1;
 int queue[max];
 
-void insert(){
+void insert()
+{
     if(rear >= max-1){
         printf("Queue is full!!");
     }
