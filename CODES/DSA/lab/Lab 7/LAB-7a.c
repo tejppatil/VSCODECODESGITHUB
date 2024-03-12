@@ -50,7 +50,7 @@ void display()
     {
         for(int i=front;i<=rear;i++)
         {
-            printf("%d\n", queue[i]);
+            printf("%d ", queue[i]);
         }
     }
 }

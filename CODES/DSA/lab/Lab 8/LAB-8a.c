@@ -7,7 +7,7 @@ int queue[max];
 void insert() 
 {
     if(rear == max-1 && front ==0 || front == rear +1)
-        printf("Queue is full!!\n");
+        printf("Queue is full>>\n");
     else 
     {
         int insert_element;
@@ -25,7 +25,7 @@ void insert()
 void delete() 
 {
     if(rear == -1 || front - rear == 1)
-        printf("Queue is empty!!\n");
+        printf("Queue is empty>>\n");
     else 
     {
         printf("Deleted element is %d\n", queue[front]);
@@ -40,10 +40,10 @@ void delete()
 void display() 
 {
     if(rear == -1)
-        printf("Queue is empty!!\n");
+        printf("Queue is empty>>\n");
     else 
     {
-        printf("Elements of the circular queue are : ");
+        printf("Elements of the circular queue are: ");
         if(rear > front) 
         {
             for(int i=front; i<=rear; i++)
@@ -64,7 +64,7 @@ int main()
     int choice;
     do 
     {
-        printf("\nEnter 0 to exit:  \nEnter 1 to Insert element: \nEnter 2 to delete element: \nEnter 3 to display element: \n");
+        printf("\nEnter 1 to Insert element: \nEnter 2 to delete element: \nEnter 3 to display element: \nEnter 0 to exit: \n");
         scanf("%d", &choice);
         switch (choice) 
         {

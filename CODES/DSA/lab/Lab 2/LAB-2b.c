@@ -19,11 +19,11 @@ int binarySearch(int array[], int low, int high, int x)
 int main() 
 {
     int size,ele;
-    printf("Enter the size of an array");
+    printf("Enter the size of an array: ");
     scanf("%d",&size);
-    printf("Enter the elemnt that you need to find in an array");
+    printf("Enter the elemnt that you need to find in an array: ");
     scanf("%d",&ele);
-    printf("Enter the elemnets in an array");
+    printf("Enter the elemnets in an array:\n");
     int arr[size];
     for(int i=0;i<=size-1;i++)
     {

@@ -4,23 +4,23 @@
 #include <string.h>
 struct stack
 {
-int size;
-int top;
-char *arr;
+    int size;
+    int top;
+    char *arr;
 };
 int isEmpty(struct stack *ptr)
 {
-return ptr->top == -1;
+    return ptr->top == -1;
 }
 
 int isFull(struct stack *ptr)
 {
-return ptr->top == ptr->size - 1;
+    return ptr->top == ptr->size - 1;
 }
 
 int stackTop(struct stack* sp)
 {
-return sp->arr[sp->top];
+    return sp->arr[sp->top];
 }
 
 void push(struct stack* ptr, char val)
@@ -114,9 +114,9 @@ char* infixToPostfix(char* infix)
 
 int main()
 {
-char infix[100];
-printf("Enter an infix expression: ");
-scanf("%s", infix);
-printf("postfix is %s", infixToPostfix(infix));
-return 0;
+    char infix[100];
+    printf("Enter an infix expression: ");
+    scanf("%s", infix);
+    printf("postfix is %s", infixToPostfix(infix));
+    return 0;
 }

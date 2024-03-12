@@ -11,7 +11,7 @@ int swap(int *x,int *y)
 int main()
 {
     int a,b;
-   printf("Enter Value For a: ");
+    printf("Enter Value For a: ");
     scanf("%d",&a);
     printf("Enter Value For b: ");
     scanf("%d",&b);
