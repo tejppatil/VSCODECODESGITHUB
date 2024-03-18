@@ -8,7 +8,7 @@ class add
     Public:
         int num1;
         int num2; 
-}
+};
 int main()
 {
     add sum;
