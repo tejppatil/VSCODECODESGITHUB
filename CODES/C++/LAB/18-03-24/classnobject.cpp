@@ -1,11 +1,9 @@
 //create class,object and adding program
-//using class and object two access specifier with any program
-//
 #include<iostream>
 using namespace std;
 class add
 {
-    Public:
+    public:
         int num1;
         int num2; 
 };
