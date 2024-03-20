@@ -22,7 +22,7 @@ int main()
         {
             if(a[i]==a[j])    
             {
-                printf("\n%d is Repeated at %d index",a[i],i);
+                printf("\n%d is Repeated at %d index",a[i],j);
                 break;   
             }
         }
