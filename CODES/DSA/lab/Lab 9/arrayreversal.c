@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,j,temp;
+    int n,i,temp;
     printf("Enter the size of array: ");
     scanf("%d",&n);
     int a[n];
@@ -15,14 +15,12 @@ int main()
     {
         printf("%d ",a[i]);
     }
+    int j=n-1;
     for(i=0;i<n/2;i++)
     {
-        for(j=n-1;j>(n+1)/2;j--)
-        {
-            temp=a[i];
-            a[i]=a[j-i];
-            a[j-i]=temp;
-        }
+        temp=a[i];
+        a[i]=a[j-i];
+        a[j-i]=temp;
     }
     printf("\nReveresed array is: ");
     for(i=0;i<n;i++)
