@@ -1,4 +1,4 @@
-//
+//A program for checkin the duplicate elements in array
 #include<stdio.h>
 int main()
 {
@@ -16,18 +16,15 @@ int main()
     {
         printf("%d ",a[i]);
     }
-    int count[n];
-    count[a[n]]++;
     for(i=0;i<n;i++)
     {
         for(j=i+1;j<n;j++)
         {
-            if(count[a[i]]>1)    
+            if(a[i]=a[j])    
             {
-                printf("\n%d is Repeated in array",a[i]);
-                count[a[i]]=0;
-                break;   
+                printf("\n%d is Repeated in array",a[i]);  
             }
+            
         }
-    }       
+    }     
 }
