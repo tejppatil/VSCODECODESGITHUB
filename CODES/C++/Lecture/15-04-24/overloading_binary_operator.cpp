@@ -16,7 +16,7 @@ class complex
         void disp()
         {
             cout<<"\nreal value="<<real<<endl;
-            cout<<"\nimag value="<<imag<<endl;
+            cout<<"imag value="<<imag<<endl;
         }
         complex operator +(complex);
 };
