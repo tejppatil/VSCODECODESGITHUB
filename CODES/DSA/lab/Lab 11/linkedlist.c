@@ -1,1 +1,0 @@
-//Write a C program to implement Stack operations using Linked List.

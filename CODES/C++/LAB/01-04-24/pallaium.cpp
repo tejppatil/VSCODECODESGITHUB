@@ -1,1 +1,0 @@
-//Write a C++ program to check palladium through string.

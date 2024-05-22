@@ -21,7 +21,7 @@ class torrent
             cout<<"vid="<<vid<<endl;
         }
 };
-int main()
+main()
 {
     torrent t1(5,6);
     t1.display();

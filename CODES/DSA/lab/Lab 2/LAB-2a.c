@@ -18,12 +18,13 @@ int main()
         if(b==a[i])
         {
             printf("Entered No. is in array at index %d",i);
-            return 0;
+            //return 0;
         }
-        
-    }
+        else
         {
             printf("Entered No. is not in array.");
         }
+    }
+        
     return 0;
 }
