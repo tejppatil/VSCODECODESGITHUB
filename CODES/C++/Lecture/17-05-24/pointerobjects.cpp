@@ -18,7 +18,7 @@ int main()
 {
     demo d(55),*ptr;
     ptr=&d;
-    cout<<(*ptr).getdata();
+    //cout<<(*ptr).getdata();//accessing it by another approach
     cout<<ptr->getdata();
     return 0;
 }

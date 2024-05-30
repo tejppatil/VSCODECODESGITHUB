@@ -17,7 +17,7 @@ class demo
 int main()
 {
     demo d[3]={55,66,77};
-    demo *ptr=d;
+    demo *ptr=d;//similar to *ptr=&d[0]
     for(int i=0;i<3;i++)
     {
         cout<<ptr->getdata()<<endl;
