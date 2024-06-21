@@ -18,6 +18,5 @@ int main()
     cout<<Large(f1,f2)<<" is Larger."<<endl;
     cout<<"\nEnter two characters:\n";
     cin>>c1>>c2;
-    cout<<Large(c1,c2)<<"has larger ASCII value.";
-
+    cout<<Large(c1,c2)<<" has larger ASCII value.";
 }

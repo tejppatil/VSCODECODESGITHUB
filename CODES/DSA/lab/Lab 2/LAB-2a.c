@@ -1,5 +1,19 @@
 //Write a C program to implement Linear Search.
 #include<stdio.h>
+int linear_search(int a[], int size, int x)
+{
+    for (int i = 0; i < size; i++)
+    {
+        if (a[i] == x)
+        {
+            return i;
+        }
+        else
+        {
+            return -1;
+        }
+    }
+}
 int main()
 {
     int n,i,b;
@@ -13,18 +27,15 @@ int main()
     }
     printf("Enter Any number:");
     scanf("%d",&b);
-    for(i=0;i<n;i++)
-    {
-        if(b==a[i])
-        {
-            printf("Entered No. is in array at index %d",i);
-            return 0;
-        }
-    }
+    int index=linear_search(a,n,b);
+    if(index==-1)
     {
         printf("Entered No. is not in array.");
     }    
-    
+    else
+    {
         
+        printf("Entered No. is in array at index %d\n",i);
+    }
     return 0;
 }
